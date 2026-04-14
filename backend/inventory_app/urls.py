@@ -21,8 +21,8 @@ router.register(r'analytics', AnalyticsViewSet, basename='analytics')
 
 
 urlpatterns = [
-    path('api/', include(router.urls)),
-    path('api/auth/register/', auth_views.register_user, name='register'),
-    path('api/auth/login/', auth_views.login_user, name='login'),
+    path('', include(router.urls)),
+    path('auth/register/', auth_views.register_user, name='register'),
+    path('auth/login/', auth_views.login_user, name='login'),
    
 ]
