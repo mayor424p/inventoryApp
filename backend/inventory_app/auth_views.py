@@ -65,7 +65,7 @@ def register_user(request):
     
     except Exception as e:
         print(f"Error registering user: {e}")
-        return Response({"error": "An error occured during registration"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
 @api_view(['POST'])
 @permission_classes([AllowAny])

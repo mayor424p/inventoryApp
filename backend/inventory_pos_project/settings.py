@@ -148,11 +148,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    True
-    # "http://localhost:3000",
-    # "https://inventory-app-frontend-git-main-stackplatter1.vercel.app",
-    # "https://inventory-app-frontend-fwpsiufwt-stackplatter1.vercel.app",
-    # "https://inventory-app-frontend-psi.vercel.app"
+    "https://inventory-app-frontend-psi.vercel.app",
+    "http://localhost:3000",          
+    "http://127.0.0.1:3000",
 ]
 
 CORS_ALLOW_HEADERS = [
