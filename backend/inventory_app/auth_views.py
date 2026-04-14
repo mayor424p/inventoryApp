@@ -42,7 +42,9 @@ def register_user(request):
             user=user,
             name=name,
             role=role,
-            email=email
+            email=email,
+            shift=shift,
+            phone_number=phone_number
         )
 
        
