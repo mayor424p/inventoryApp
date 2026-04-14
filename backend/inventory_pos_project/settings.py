@@ -87,9 +87,9 @@ SIMPLE_JWT = {
     }   
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -151,6 +151,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://inventory-app-frontend-git-main-stackplatter1.vercel.app",
     "https://inventory-app-frontend-fwpsiufwt-stackplatter1.vercel.app",
+    "https://inventory-app-frontend-psi.vercel.app"
+]
+
+CORS_ALLOW_HEADERS = [
+    "content-type",
+    "authorization",
 ]
 
 # Internationalization
