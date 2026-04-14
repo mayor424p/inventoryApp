@@ -43,7 +43,7 @@ def register_user(request):
             name=name,
             role=role,
             email=email,
-            phone=phone_number
+            phone=phone_number,
             department=shift or "General",
         )
 
