@@ -140,7 +140,7 @@ class Staff(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=255)
     email = models.EmailField()
-    phone = models.CharField(max_length=20)
+    phone = models.CharField(max_length=20,blank=True, null=True)
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='staff')
     department = models.CharField(max_length=100, default="General")
     salary = models.DecimalField(max_digits=10, decimal_places=2, default=0)
